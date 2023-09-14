@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="kalkulator">Katik</h1>&nbsp&nbsp;
+        <h1 class="hitung">Kalkulator Matematik</h1>
+    </header>
+
+<h1 class="welcomeToKatik">Welcome to Katik</h1>
+
+<h6 class="haisobat">Hai guys, Welcome to Katik!!</h6>
+<h6 class="sebuahweb">Sebuah web apps sederhana yang bisa membantu teman-teman sekalian dalam menghitung nilai luas maupun keliling bangun datar</h6>
+
+
+<section class="kalkulatorPersegiSection">
+    <button id="square-button">Persegi</button>&nbsp;
+</section>
+
+<!--bagian gambar persegi-->
+<section class="PersegiSection">
+    <img src="https://o-cdn-cas.sirclocdn.com/parenting/images/Persegi_finirezyhome.wordpress.co.width-500.format-webp.webp" id="persegi" alt="gambar persegi ">
+
+    <center><p>Rumus Luas Persegi : </p></center>
+    <center><h3 id="rumusPersegi">L = S x S </h3></center>
+    <center><p>Rumus Keliling Persegi : </p></center>
+    <center><h3 id="rumusPersegi">K = 4 x S </h3></center>
+
+    <div>
+    <p>Keterangan : </p>
+    <p>L = Luas persegi &nbsp</p>
+    <p>S = Sisi persegi &nbsp</p>
+    <p>K = Keliling &nbsp </p>
+   </div>
+</section>
+<br><br>
+
+
+<!--bagian Persegi-->
+<section class="PersegiSection">
+    <h2 id="LKpersegi">Hitung Persegi</h2>
+    <section class="Luasinputsection">
+    <label for="sisi">Sisi Persegi:</label>
+    <input type="number" id="sisiPersegi" placeholder="Masukkan sisi">&nbsp
+</section>
+<section class="inputButton">
+    <button onclick="hitungLuasPersegi()">Luas</button>&nbsp&nbsp
+    <button onclick="hitungKelilingPersegi()">Keliling</button>
+</section>
+<p id="luasPersegi"></p>
+<p id="kelilingPersegi"></p>
+</section>
+<br
+
+<hr id="vertikal">
+
+<br><br><br>
+
+<section class="kalkulatorPersegiSection">
+    <button id="rectangle-button">Persegi Panjang</button>
+</section>
+
+<!--bagian gambar persegi panjang-->
+<section class="PersegiPanjangSection">
+    <img src="https://rumuspintar.com/wp-content/uploads/2019/07/Persegi-Panjang.jpg" id="persegipanjang" alt="gambar persegi panjang">
+    <center><p>Rumus Luas Persegi Panjang :</p></center>
+    <center><h3 id="rumusPersegiPanjang">L = P x L</h3></center>
+    <center><p>Rumus Keliling Persegi Panjang</p></center>
+    <center><h3 id="rumusPersegiPanjang">K = 2 x (P+L) </h3></center>
+
+    <div>
+    <p>Keterangan : </p>
+    <p>P = Panjang persegi Panjang &nbsp</p>
+    <p>L = Lebar persegi Panjang &nbsp</p>
+    <p>K = Keliling &nbsp </p>
+   </div>
+</section>
+
+   <br><br>
+
+<!--bagian persegi panjang-->
+<section class="PersegiPanjangSection">
+    <h2 id="LKpersegipanjang"> Hitung Persegi Panjang</h2> 
+    <section class="Luasinputsection">
+        <label for="panjang">Panjang Persegi:</label>
+        <input type="number" id="panjangPersegiPanjang" placeholder="Masukkan panjang">&nbsp
+         <label for="lebar">lebar Persegi:</label>
+        <input type="number" id="lebarPersegiPanjang" placeholder="Masukkan lebar">
+    </section>
+    <section class="inputButton">
+        <button onclick="hitungLuasPersegiPanjang()">Luas</button>&nbsp&nbsp
+        <button onclick="hitungKelilingPersegiPanjang()">Keliling</button>
+    </section>
+    <p id="luasPersegiPanjang"></p>
+    <p id="kelilingPersegiPanjang"></p>
+</section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
